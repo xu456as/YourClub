@@ -23,6 +23,19 @@ class UserProfile(AbstractUser):
         return self.username
 
 
+class UserRegistry(models.Model):
+    fan = models.ForeignKey(UserProfile,related_name="fan", verbose_name=u"关注者")
+    idol = models.ForeignKey(UserProfile, related_name="idol", verbose_name=u"被关注者")
+    added_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
+
+    class Meta:
+        verbose_name = u"用户关注"
+        verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return u"{0}关注{1}".format(self.fan, self.idol)
+
+
 class EmailVerifyRecord(models.Model):
     code = models.CharField(max_length=20, verbose_name=u"验证码")
     email = models.EmailField(max_length=50, verbose_name=u"邮箱")
@@ -35,4 +48,7 @@ class EmailVerifyRecord(models.Model):
 
     def __unicode__(self):
         return '{0}({1})'.format(self.code, self.email)
+
+
+
 
