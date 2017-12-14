@@ -11,7 +11,7 @@ from User.models import UserProfile
 class CityDictionary(models.Model):
     name = models.CharField(max_length=20, verbose_name=u"城市")
     desc = models.CharField(max_length=200, verbose_name=u"描述")
-    add_time = models.DateTimeField(default=datetime.now)
+    added_time = models.DateTimeField(default=datetime.now)
 
     class Meta:
         verbose_name = u"城市"
@@ -29,7 +29,7 @@ class Activity(models.Model):
     restrict_number = models.IntegerField(default=500, verbose_name=u"人数限制")
     city = models.ForeignKey(CityDictionary, verbose_name=u"城市")
     address = models.CharField(max_length=100, verbose_name=u"详细地点")
-    fee = models.DecimalField(default=0, decimal_places=2, max_digits=10, verbose_name=u"参与费用", )
+    fee = models.DecimalField(default=0, decimal_places=2, max_digits=10, verbose_name=u"参与费用")
     start_time = models.DateTimeField(default=datetime.now, verbose_name=u"开始时间")
     end_time = models.DateTimeField(default=datetime.now, verbose_name=u"结束时间")
     added_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
