@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdc25ed0-71e2-4fa7-8d2f-3f7cd5081727" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Activity/2017/12/u892237050967323435fm58.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Activity/2017/12/u892237050967323435fm58_UDpWjRD.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/image/2017/12/u892237050967323435fm58.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YourClub/settings.py" afterPath="$PROJECT_DIR$/YourClub/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/User/models.py" afterPath="$PROJECT_DIR$/apps/User/models.py" />
-    </list>
+    <list default="true" id="bdc25ed0-71e2-4fa7-8d2f-3f7cd5081727" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
